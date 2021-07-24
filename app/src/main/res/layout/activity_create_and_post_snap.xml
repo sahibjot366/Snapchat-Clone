@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".CreateAndPostSnapActivity">
+
+    <ImageView
+        android:id="@+id/snapImageView"
+        android:layout_width="346dp"
+        android:layout_height="346dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="289dp"
+        android:background="#FFEB3B"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/choosePictureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="223dp"
+        android:backgroundTint="#2196F3"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="choosePicture"
+        android:text="Choose Picture"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sendSnapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="613dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#2196F3"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="SendSnap"
+        android:text="Send Snap"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/captionText"
+        android:layout_width="312dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="518dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="132dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Write your caption here"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
